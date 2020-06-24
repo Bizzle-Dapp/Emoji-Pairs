@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { Card, CardProps } from './Card';
-import { waitForElementToBeRemoved } from '@testing-library/react';
 
 enum Difficulty {
     None,
