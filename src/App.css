@@ -1,21 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Catamaran);
+
 .App {
   text-align: center;
+  font-family: "Catamaran", serif;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
+  font-size: 40px;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-animate infinite 20s linear;
+  }
+  .App-card-selected {
+    animation: App-card-selected infinite 20s linear;
   }
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +32,68 @@
   color: white;
 }
 
+.App-body {
+  background-color: #282c34;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
+@keyframes App-logo-animate {
+  0% {
     transform: rotate(0deg);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e66800, 0 0 40px #e66800, 0 0 50px #e66800, 0 0 60px #e66800, 0 0 70px #e66800;
   }
-  to {
+  50% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff9d4d, 0 0 40px #ff9d4d, 0 0 50px #ff9d4d, 0 0 60px #ff9d4d, 0 0 70px #ff9d4d, 0 0 80px #ff9d4d;
+
+  }
+  100% {
     transform: rotate(360deg);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e66800, 0 0 40px #e66800, 0 0 50px #e66800, 0 0 60px #e66800, 0 0 70px #e66800;
   }
+}
+
+.App-card {
+  border: 2px rgb(248, 236, 59) ridge;
+  min-height: 10vh;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.App-card-selected {
+  border: 1px ghostwhite solid;
+}
+
+@keyframes App-card-selected {
+  0% {
+    box-shadow: 0 0 3px #fff, 0 0 2px #fff, 0 0 3px #e66800, 0 0 4px #e66800, 0 0 5px #e66800, 0 0 6px #e66800, 0 0 7px #e66800;
+  }
+  50% {
+    box-shadow: 0 0 2px #fff, 0 0 3px #ff9d4d, 0 0 4px #ff9d4d, 0 0 5px #ff9d4d, 0 0 6px #ff9d4d, 0 0 7px #ff9d4d, 0 0 8px #ff9d4d;
+
+  }
+  100% {
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #e66800, 0 0 4px #e66800, 0 0 5px #e66800, 0 0 6px #e66800, 0 0 7px #e66800;
+  }
+}
+
+.Button {
+  font-family: "Catamaran", serif;
+  font-size: 24px;
+  color: #e2e2e2;
+  text-shadow: 3px 2px 3px #131417;
+  background: transparent;
+  border-radius: 9px;
+  box-shadow: 1px 1px 6px #697eaf;
+  outline: none;
+  width: 140px;
+  margin-bottom: 6px;
 }
