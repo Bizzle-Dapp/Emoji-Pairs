@@ -2,7 +2,7 @@
 
 ![Alt text](/img/ReadmeExample.png?raw=true "Example Image")
 
-A little game I made for my daughter during the Covid-19 Lockdown. She was moaning that she was bored, so I went out the office in the morning, and returned with this in the afternoon - just before bedtime. She can play it tomorrow though, right..?
+A little game I made for my daughter during the Covid-19 Lockdown. She was moaning that she was bored, so I went out to the office in the morning and returned with this in the afternoon - just before bedtime. She can play it tomorrow though, right..?
 
 ## NOW WITH THREE WHOLE DIFFICULTY LEVELS!
 
