@@ -6,6 +6,8 @@ A little game I made for my daughter during the Covid-19 Lockdown. She was moani
 
 ## NOW WITH THREE WHOLE DIFFICULTY LEVELS!
 
+![Alt text](/img/ReadmeExample2.png?raw=true "Example Image 2")
+
 Mindblowing paired madness awaits in the challenges ahead. With the power of Knuth Shuffle, *no two games are the same!!!
 
 *(Games can in fact be the same as a previous one. How many different variations of cards is subject to the difficulty ratings, but it's not a mindblowing amount of variation.)
