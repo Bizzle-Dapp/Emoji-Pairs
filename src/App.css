@@ -64,6 +64,7 @@
 .App-card {
   border: 2px rgb(248, 236, 59) ridge;
   min-height: 10vh;
+  width: 15vw !important;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -96,4 +97,11 @@
   outline: none;
   width: 140px;
   margin-bottom: 6px;
+}
+
+button:hover{
+  background: transparent !important;
+}
+button:focus{
+  background: transparent !important;
 }
