@@ -31,7 +31,8 @@
 }
 
 .App-body {
-  min-height: 80vh;
+  background-color: #282c34;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,6 +62,7 @@
 .App-card {
   border: 2px rgba(6, 51, 117, 0.699) ridge;
   min-height: 10vh;
+  width: 15vw !important;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -93,4 +95,11 @@
   outline: none;
   width: 140px;
   margin-bottom: 6px;
+}
+
+button:hover{
+  background: transparent !important;
+}
+button:focus{
+  background: transparent !important;
 }
