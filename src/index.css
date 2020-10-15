@@ -1,3 +1,8 @@
+/*
+  Saw this beautiful codepen this morning: https://codepen.io/alanhood/pen/ExPmame 
+  Had to take that background idea and push it into this game as it was just too good to pass up. 
+  Compliments to Alan.
+*/
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +10,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 1px, transparent 10px),
+  radial-gradient(white, rgba(255,255,255,.15) .5px, transparent 5px),
+  radial-gradient(white, rgba(255,255,255,.1) 1px, transparent 10px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 5px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
 code {
