@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { Card, CardProps } from './Card';
 
-enum Difficulty {
+export enum Difficulty {
     None,
     Easy,
     Medium,
@@ -11,12 +11,12 @@ enum Difficulty {
 
 export interface GameProps {
     selectedDifficulty: Difficulty,
-    setDifficultyLevel: Function,
+    setDifficultyLevel(difficulty: Difficulty): void,
 }
 
 let emojiArray = ['🌲', '🌵', '🌻', '🌸', '🍄', '🐞', '🕷️', '🐢', '🐉', '🐘', '🐅', '🐒', '🍏', '🍅', '🌽', '🍆'];
 
-export const Game: React.FC<GameProps> = (props) => {
+export const Game: React.FC<GameProps> = (props: GameProps) => {
 
     const [emojisInPlay, setEmojisInPlay] = useState<Array<CardProps>>();
     const [selectedCard, setSelectedCard] = useState<CardProps>();

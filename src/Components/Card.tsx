@@ -7,7 +7,7 @@ export interface CardProps {
     isFlipped: boolean,
     isPaired: boolean,
     isSelected: boolean,
-    selectCard: Function
+    selectCard(cardProps : CardProps): void,
 }
 
 
@@ -15,7 +15,7 @@ const flippedAppearance = () => {
     return '❔'
 }
 
-export const Card: React.FC<CardProps> = (props) => {
+export const Card: React.FC<CardProps> = (props: CardProps) => {
     return (
         
         <>
